@@ -1,9 +1,5 @@
 # Pokebook
 
-![coverage][coverage_badge]
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![License: MIT][license_badge]][license_link]
-
 Pokebook Project created Samuel Twumasi(samueltwumasi1290@gmail.com).
 
 ## Getting Started 🚀
