@@ -47,7 +47,7 @@ class _PokebookListScreenState extends State<PokebookListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppbar(
-        toolbarHeight: 36.h,
+        toolbarHeight: 10.h,
         flexibleSpace: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisSize: MainAxisSize.min,
@@ -66,7 +66,7 @@ class _PokebookListScreenState extends State<PokebookListScreen> {
               offset: Offset(0, -20),
               child: SvgPicture.asset(
                 Assets.svgs.logo,
-                width: 110,
+                width: 110.w,
               ),
             ),
             Spacer(),
@@ -137,12 +137,12 @@ class _PokebookListScreenState extends State<PokebookListScreen> {
                                 duration: Durations.extralong1,
                                 child: ListView.separated(
                                   padding: EdgeInsets.symmetric(vertical: 85.h),
-                                  itemCount: 5,
+                                  itemCount: 10,
                                   itemBuilder: (ctx, index) {
-                                    final startIndex = page * 5;
+                                    final startIndex = page * 10;
                                     final items = state.bulkPokemons
                                         .skip(startIndex)
-                                        .take(5)
+                                        .take(10)
                                         .toList();
                                     return PokemonItem(
                                       pokemonModel: items[index],
@@ -180,7 +180,7 @@ class _PokebookListScreenState extends State<PokebookListScreen> {
                                 : Offset(0, 2),
                             duration: Durations.long3,
                             child: PaginatedNumber(
-                              numberOfPages: state.bulkPokemons.length ~/ 5,
+                              numberOfPages: state.bulkPokemons.length ~/ 10,
                               onPageChange: (pageIndex) {
                                 setState(() {
                                   page = pageIndex;

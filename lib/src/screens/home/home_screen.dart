@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pokebook/blocs/pokemon/pokemon_bloc.dart';
@@ -38,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return BlocListener<PokemonBloc, PokemonState>(
       listener: (context, state) {
         if (!state.fetchSingleSuccess) {
+          HapticFeedback.heavyImpact();
           toastification.show(
             autoCloseDuration: Duration(seconds: 3),
             alignment: Alignment.topCenter,

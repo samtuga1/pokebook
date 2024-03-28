@@ -7,7 +7,7 @@ sealed class PokemonEvent extends Equatable {
 
 class FetchPokemons extends PokemonEvent {
   final int limit;
-  FetchPokemons({this.limit = 10});
+  FetchPokemons({this.limit = 100});
 
   @override
   List<Object?> get props => [limit];

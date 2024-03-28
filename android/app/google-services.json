@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1089497905287",
+    "project_id": "pokemon-ba161",
+    "storage_bucket": "pokemon-ba161.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089497905287:android:667899bb7e405ccd30e022",
+        "android_client_info": {
+          "package_name": "com.example.verygoodcore.pokebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK00V7qCSEbS4r9Ld-VBV8Ph9Y8jZi2wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
