@@ -6,13 +6,14 @@
 
 Pokebook Project created Samuel Twumasi(samueltwumasi1290@gmail.com).
 
----
-
 ## Getting Started 🚀
 
 The global configuration has been sent to your email, add it to
+
+```dart
 assets
 --cfg (over here)
+```
 
 This project contains 3 flavors:
 
