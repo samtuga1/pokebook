@@ -55,8 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
               .push(PokemonDetailRoute(pokemon: state.seachedPokemon!));
         }
       },
-      listenWhen: (previous, current) =>
-          previous.isFetchingSingle != current.isFetchingSingle,
+      // listenWhen: (previous, current) =>
+      //     previous.isFetchingSingle != current.isFetchingSingle,
       child: ListView(
         padding: EdgeInsets.fromLTRB(20.w, top + 84.h, 20.w, 50.h),
         children: [
